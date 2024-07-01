@@ -10,7 +10,7 @@ var h2Style = const TextStyle(
 );
 
 var bodyStyle = const TextStyle(
-  fontSize: 16,
+  fontSize: 15,
 );
 
 var bodyBoldStyle = const TextStyle(

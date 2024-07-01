@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_hotel_booking/presentations/home/home_screen.dart';
+import 'package:flutter_hotel_booking/utils/custom_navigation_bar.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
             outline: Colors.grey),
         useMaterial3: true,
       ),
-      home: const HomeScreen(),
+      home: const CustomNavigationBar(),
     );
   }
 }
