@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_hotel_booking/presentations/reservation/reservation_screen.dart';
 import 'package:flutter_hotel_booking/utils/custom_textstyle.dart';
 import 'package:flutter_hotel_booking/utils/facilities_item.dart';
 
@@ -305,7 +306,12 @@ class DetailScreen extends StatelessWidget {
                     ],
                   ),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (builder) {
+                        return const ReservationScreen();
+                      }));
+                    },
                     style:
                         ElevatedButton.styleFrom(backgroundColor: Colors.black),
                     child: const Padding(
